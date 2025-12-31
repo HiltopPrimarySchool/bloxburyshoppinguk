@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coming Soon | Bloxbury Shopping UK</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/releases/v5.15.4/css/all.min.css">
+    <style>
+        :root {
+            --shamrock-green: #009e60;
+            --dark-shamrock: #007d4c;
+            --light-shamrock: #e6f5ef;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f9fafb;
+        }
+
+        .bg-shamrock { background-color: var(--shamrock-green); }
+        .text-shamrock { color: var(--shamrock-green); }
+        
+        .hero-pattern {
+            background-color: var(--shamrock-green);
+            background-image: radial-gradient(#ffffff22 1px, transparent 1px);
+            background-size: 20px 20px;
+        }
+
+        .countdown-card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .btn-glow:hover {
+            box-shadow: 0 0 20px rgba(0, 158, 96, 0.4);
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .animate-fade-in {
+            animation: fadeIn 0.5s ease-out forwards;
+        }
+
+        .logo-img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+            filter: drop-shadow(0 10px 15px rgba(0,0,0,0.2));
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col">
+
+    <!-- Main Content -->
+    <main class="flex-grow flex items-center justify-center relative overflow-hidden hero-pattern text-white py-12">
+        
+        <!-- Decorative Elements -->
+        <div class="absolute top-0 left-0 w-64 h-64 bg-white/10 rounded-full -ml-32 -mt-32 blur-3xl"></div>
+        <div class="absolute bottom-0 right-0 w-96 h-96 bg-black/10 rounded-full -mr-48 -mb-48 blur-3xl"></div>
+
+        <div class="max-w-4xl mx-auto px-4 text-center relative z-10">
+            <!-- Logo Container -->
+            <div class="flex flex-col items-center mb-8 animate-fade-in">
+                <div class="w-32 h-32 md:w-48 md:h-48 flex items-center justify-center mb-4">
+                    <img 
+                        src="https://media.discordapp.net/attachments/1421458340780839016/1455942074569461830/discotools-xyz-icon_-_2025-12-31T151344.969.png?ex=69568f38&is=69553db8&hm=ae68f6807e1def9bdcaebe3a35ac4e99fcae58e77b11401bb85e41ec9fdbfa3b&=&format=webp&quality=lossless" 
+                        alt="Bloxbury Shopping UK Logo" 
+                        class="logo-img"
+                        onerror="this.style.display='none'; this.parentElement.innerHTML='<i class=\'fas fa-shopping-basket text-white text-6xl\'></i>'"
+                    >
+                </div>
+                <h1 class="text-4xl font-bold tracking-tight">Bloxbury<span class="text-emerald-200">Shopping</span></h1>
+            </div>
+
+            <h2 class="text-5xl md:text-7xl font-extrabold mb-6 tracking-tight">
+                Something <span class="text-yellow-400">Fresh</span> is In Store.
+            </h2>
+            <p class="text-xl md:text-2xl text-emerald-50 mb-12 max-w-2xl mx-auto opacity-90">
+                The UK's most authentic Ro-Store experience is currently restocking. We're building a better way for you to shop in Bloxbury.
+            </p>
+
+            <!-- Countdown -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-16">
+                <div class="countdown-card p-6 rounded-2xl">
+                    <span id="days" class="block text-4xl md:text-5xl font-black">00</span>
+                    <span class="text-xs uppercase tracking-widest opacity-70 font-bold">Days</span>
+                </div>
+                <div class="countdown-card p-6 rounded-2xl">
+                    <span id="hours" class="block text-4xl md:text-5xl font-black">00</span>
+                    <span class="text-xs uppercase tracking-widest opacity-70 font-bold">Hours</span>
+                </div>
+                <div class="countdown-card p-6 rounded-2xl">
+                    <span id="minutes" class="block text-4xl md:text-5xl font-black">00</span>
+                    <span class="text-xs uppercase tracking-widest opacity-70 font-bold">Minutes</span>
+                </div>
+                <div class="countdown-card p-6 rounded-2xl">
+                    <span id="seconds" class="block text-4xl md:text-5xl font-black">00</span>
+                    <span class="text-xs uppercase tracking-widest opacity-70 font-bold">Seconds</span>
+                </div>
+            </div>
+
+            <!-- Social Links -->
+            <div class="flex justify-center space-x-6 mt-12">
+                <a href="#" class="hover:text-yellow-400 transition-colors text-2xl" title="Discord"><i class="fab fa-discord"></i></a>
+                <a href="#" class="hover:text-yellow-400 transition-colors text-2xl" title="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="hover:text-yellow-400 transition-colors text-2xl" title="YouTube"><i class="fab fa-youtube"></i></a>
+                <a href="#" class="hover:text-yellow-400 transition-colors text-2xl" title="Roblox Group"><i class="fas fa-gamepad"></i></a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="py-8 bg-white text-center text-gray-500 text-sm">
+        <div class="max-w-7xl mx-auto px-4">
+            <p class="mb-2">&copy; 2024 Bloxbury Shopping UK. All rights reserved.</p>
+            <p class="italic">"Live Well for Less in Bloxbury"</p>
+        </div>
+    </footer>
+
+    <script>
+        /** * FIXED LAUNCH DATE
+         * Set to 2nd January 2026 at 15:00 GMT
+         */
+        const launchDate = new Date("January 2, 2026 15:00:00 GMT").getTime();
+
+        function updateCountdown() {
+            const now = new Date().getTime();
+            const distance = launchDate - now;
+
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            // Update UI
+            document.getElementById("days").innerText = Math.max(0, days).toString().padStart(2, '0');
+            document.getElementById("hours").innerText = Math.max(0, hours).toString().padStart(2, '0');
+            document.getElementById("minutes").innerText = Math.max(0, minutes).toString().padStart(2, '0');
+            document.getElementById("seconds").innerText = Math.max(0, seconds).toString().padStart(2, '0');
+
+            if (distance < 0) {
+                clearInterval(interval);
+                document.querySelector("h2").innerHTML = "We Are <span class='text-yellow-400'>Open!</span>";
+            }
+        }
+        
+        const interval = setInterval(updateCountdown, 1000);
+        updateCountdown();
+    </script>
+</body>
+</html>
